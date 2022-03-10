@@ -30,4 +30,11 @@ RSpec.describe "track_tasks method" do
       expect(track_tasks("@TODO: walking the dog")).to eq false
     end 
   end
+
+  context "given a text including @TODO followed by punctuation" do
+    it "return false" do
+      expect(track_tasks("walk in a cool@TODOpark")).to eq false
+    end 
+  end
+
 end

@@ -46,6 +46,7 @@ track_tasks("TODO walking the dog") => false
 track_tasks("@TODO: walking the dog") => false
 
 #scenario7
+track_tasks("walking in the@TODOcool park") => false
 
 #scenario8
 
