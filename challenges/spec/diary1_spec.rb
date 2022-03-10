@@ -18,13 +18,11 @@ end
 =begin
   it "returns ... if more than five words" do
     diary = Diary.new
-
     expect(diary.make_snippet("one two three four five six")).to eq "one two three four five..."
   end
 
   it "returns the words without ... if less than five words" do
    diary = Diary.new 
-
    expect(diary.make_snippet("one two three")).to eq "one two three"
   end
 end
@@ -33,7 +31,6 @@ end
 =begin
   it "takes a string as an argument" do
     diary = Diary.new
-
     expect(diary.make_snippet("hello")).to eq "hello"
   end
 =end
@@ -41,7 +38,6 @@ end
 =begin
   it "returns the first five words" do
     diary = Diary.new
-
     expect(diary.make_snippet("one two three four five six")).to eq "one two three four five"
     expect(diary.make_snippet("seven eight nine ten eleven twelve")).to eq "seven eight nine ten eleven"
   end
@@ -50,7 +46,6 @@ end
 =begin
   it "splits the string into an array" do
     diary = Diary.new
-
     expect(diary.make_snippet("one two three four five six")).to eq ["one", "two", "three", "four", "five", "six"]
   end
 =end

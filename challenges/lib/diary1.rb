@@ -12,6 +12,5 @@ class Diary
   def count_words(word)
     return word.split(" ").length
   end
-
-
+  
 end
